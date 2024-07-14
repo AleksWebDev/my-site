@@ -1,0 +1,21 @@
+.linkedin{
+    width: 32px;
+    height: 32px;
+
+    /* Tablet bit */
+    @media (max-width: 1139px) {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.github{
+    width: 42px;
+    height: 41px;
+
+    /* Tablet bit */
+    @media (max-width: 1139px) {
+        width: 36px;
+        height: 35px;
+    }
+}

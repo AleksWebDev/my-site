@@ -1,0 +1,97 @@
+.portfolio{
+    padding-top: 80px;
+    padding-bottom: 90px;
+    
+    background: linear-gradient(0deg, #F5FBFF,#F5FBFF), #F4F8F9;
+
+    /* Tablet big*/
+    @media (max-width: 1139px) {
+        padding-top: 40px;
+        padding-bottom: 61px;
+    }
+
+    /* Tablet small*/
+    @media (max-width: 899px) {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        padding-top: 27px;
+    }
+}
+
+.portfolio__title{
+    margin-bottom: 65px;
+
+    /* Tablet big*/
+    @media (max-width: 1139px) {
+        margin-bottom: 37px;
+    }
+
+    /* Tablet smoll*/
+    @media (max-width: 899px) {
+        margin-bottom: 32px;
+    }
+}
+
+.portfolio__cards{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+    row-gap: 30px;
+    column-gap: 30px;
+    
+    overflow: hidden;
+
+    /* Tablet small*/
+    @media (max-width: 899px) {
+        row-gap: 5px;
+    }
+
+    /* Mobile*/
+    @media (max-width: 767px) {
+        row-gap: 17px;
+    }
+}
+
+
+/* max navigation */
+
+.mix-block__btn{
+    margin-bottom: 40px;
+}
+
+.mix-block__btn button:not(:last-child){
+    margin-right: 30px;
+
+    /* Mobile*/
+    @media (max-width: 767px) {
+        margin-right: 10px;
+    }
+}
+
+.mix-block__btn button{
+    color: rgb(158, 194, 208);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    transition: all 0.2s ease-in;
+    /* Mobile*/
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
+}
+
+.mix-block__btn button:focus{
+    color: rgb(255, 84, 62);
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+.mix-block__btn button:hover{
+    color: rgb(255, 84, 62);
+    font-weight: 600;
+    transform: scale(1.1);
+}

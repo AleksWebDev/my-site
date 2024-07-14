@@ -1,0 +1,16 @@
+.logo{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+
+    display: none;
+
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        display: block;
+    }
+}

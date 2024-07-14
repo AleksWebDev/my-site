@@ -1,0 +1,30 @@
+.title.grad-border{
+    color: rgb(0, 0, 0);
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 1;
+
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 12px;
+    background-size: 100% 12px;
+    background-image: linear-gradient(to right, #FBDC4D, #FBDC4D);
+
+    /* Tablet big */
+    @media (max-width: 1139px) {
+        font-size: 58px;
+    }
+
+    /* Tablet small*/
+    @media (max-width: 899px) {
+        font-size: 42px;
+        background-position: center bottom 6px;
+        background-size: 100% 8px;
+    }
+
+    /* Mobile*/
+    @media (max-width: 767px) {
+        font-size: 32px;
+    }
+}
+

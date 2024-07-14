@@ -1,0 +1,43 @@
+.nav{
+    /* Tablet small*/
+    @media (max-width: 899px) {
+        display: none;
+    }
+}
+
+.nav__list{
+    display: flex;
+    gap: 100px;
+
+
+    /* Tablet bit */
+    @media (max-width: 1139px) {
+        gap: 50px;
+    }
+}
+
+
+.nav__list-link {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    transition: color 0.2s ease-in;
+
+    /* Tablet bit */
+    @media (max-width: 1139px) {
+        font-size: 18px;
+    }
+
+    &:hover{
+        color: rgb(255, 84, 62);
+    }
+
+    &:focus{
+        color: rgb(255, 84, 62);
+    }
+
+    &:active{
+        color: rgb(255, 84, 62);
+    }
+}

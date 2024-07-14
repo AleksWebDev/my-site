@@ -1,0 +1,45 @@
+.social-links__title{
+    margin-bottom: 28px;
+
+    /* Tablet big */
+    @media (max-width: 1139px) {
+        margin-bottom: 22px;
+    }
+}
+
+.socials{
+    display: flex;
+    gap: 30px;
+
+    margin-bottom: 15px;
+
+    /* Tablet big */
+    @media (max-width: 1139px) {
+        gap: 20px;
+
+        margin-bottom: 9px;
+    }
+
+    li{
+        a{
+            transition: opacity 0.2s ease-in;
+            img{
+                /* Tablet small*/
+                @media (max-width: 899px) {
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+
+            &:hover{
+                opacity: 0.75;
+            }
+        }
+    }
+}
+
+
+
+
+
+

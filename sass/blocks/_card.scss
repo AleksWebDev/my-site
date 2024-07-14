@@ -1,0 +1,232 @@
+.card {
+
+    width: 350px;
+
+    /* Tablet big*/
+    @media (max-width: 1139px) {
+        width: 270px;
+    }
+
+    /* Tablet small*/
+    @media (max-width: 899px) {
+        width: 226px;
+    }
+
+    /* Mobile*/
+    @media (max-width: 767px) {
+        width: 290px;
+    }
+
+    &:hover .card__img::before{
+        transform: translateY(0);
+    }
+
+    &:hover .card__img span{
+        transform: scale(1);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card__img{
+        overflow: hidden;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+
+            background-color: rgba(255, 221, 85, 0.75);
+            transform: translateY(100%);
+            transition: 0.2s ease-in;
+        }
+
+        span{
+            position: absolute;
+            display: inline-block;
+            height: 51px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0px 20px 0px 20px;
+            z-index: 3;
+
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 51px;
+            white-space: nowrap;
+
+            border-radius: 80px;
+            background: rgb(239, 104, 87);
+
+            transform: scale(0);
+
+            transition: 0.2s ease-in;
+        }
+
+
+        img{
+            width: 350px;
+            height: 220px;
+            object-fit: cover;
+
+            /* Tablet big*/
+            @media (max-width: 1139px) {
+                width: 270px;
+                height: 169px;
+            }
+
+            /* Tablet small*/
+            @media (max-width: 899px) {
+                width: 226px;
+                height: 140px;
+            }
+
+            /* Mobile XS */
+            @media (max-width: 767px) {
+                width: 290px;
+                height: 180px;
+            }
+        }
+    }
+
+    .card__description {
+        padding-top: 13px;
+
+        /* Tablet big*/
+        @media (max-width: 1139px) {
+            padding-top: 10px;
+        }
+
+        &:hover .card__title{
+            color: rgb(255, 84, 62);
+        }
+    }
+
+
+    .card__title {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.3;
+
+        transition: color 0.2s ease-in;
+
+        /* Tablet big*/
+        @media (max-width: 1139px) {
+            font-size: 18px;
+        }
+    }
+    .card__text {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.3;
+
+        /* Tablet big*/
+        @media (max-width: 1139px) {
+            font-size: 14px;
+        }
+    }
+
+
+    .card__title, .card__text{
+        display: inline-block;
+        width: 100%;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        /* Tablet small*/
+        @media (max-width: 899px) {
+            white-space: unset;
+        }
+    }
+}
+
+
+.card:nth-child(1), .card:nth-child(2){
+    width: 540px;
+    margin-bottom: 10px;
+
+    /* Tablet big*/
+    @media (max-width: 1139px) {
+        margin-bottom: 0px;
+        width: 420px;
+    }
+
+    /* Tablet small*/
+    @media (max-width: 899px) {
+        width: 354px;
+    }
+
+    .card__img{
+        img{
+            width: 540px;
+            height: 370px;
+
+            /* Tablet big*/
+            @media (max-width: 1139px) {
+                width: 420px;
+                height: 288px;
+            }
+
+            /* Tablet small*/
+            @media (max-width: 899px) {
+                width: 354px;
+                height: 180px;
+            }
+        }
+    }
+
+    .card__description{
+        /* Tablet small*/
+        @media (max-width: 899px) {
+            padding-top: 0px;
+        }
+    }
+
+    .card__title {
+        padding-top: 9px;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.3;
+
+        /* Tablet big*/
+        @media (max-width: 1139px) {
+            font-size: 24px;
+        }
+
+        /* Tablet small*/
+        @media (max-width: 899px) {
+            font-size: 18px;
+
+            padding-top: 7px;
+        }
+    }
+    .card__text {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.3;
+
+        /* Tablet big*/
+        @media (max-width: 1139px) {
+            font-size: 16px;
+        }
+
+        /* Tablet small*/
+        @media (max-width: 899px) {
+            font-size: 14px;
+        }
+    }
+}
+
